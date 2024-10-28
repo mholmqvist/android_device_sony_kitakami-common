@@ -1,2 +1,9 @@
-allow perfd sysfs_memory:dir search;
-allow perfd sysfs_memory:file { open read write };
+allow perfd cgroup:file read;
+allow perfd default_prop:file r_file_perms;
+allow perfd proc:file r_file_perms;
+allow perfd sysfs_devfreq:dir read;
+allow perfd sysfs:dir r_dir_perms;
+allow perfd sysfs:file rw_file_perms;
+allow perfd sysfs_msm_perf:dir search;
+allow perfd system_data_file:dir w_dir_perms;
+allow perfd system_data_file:file create_file_perms;
