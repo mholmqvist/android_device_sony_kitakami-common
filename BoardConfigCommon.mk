@@ -213,7 +213,8 @@ TARGET_LD_SHIM_LIBS := \
 
 # SELinux
 #include device/qcom/sepolicy-legacy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+#BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy-minimal
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # WiFi
