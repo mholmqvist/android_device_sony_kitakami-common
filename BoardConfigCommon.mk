@@ -212,9 +212,9 @@ TARGET_LD_SHIM_LIBS := \
      /system/vendor/lib64/libmm-abl.so|libshims_postproc.so
 
 # SELinux
-#include device/qcom/sepolicy-legacy/sepolicy.mk
-#BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
-BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy-minimal
+include device/qcom/sepolicy-legacy/sepolicy.mk
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+#BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy-minimal
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # WiFi
